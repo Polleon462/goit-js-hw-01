@@ -1,5 +1,5 @@
 function getShippingMessage(country, price, deliveryFee) {
-  const totalPrice = Number.parseFloat(price) + Number.parseFloat(deliveryFee);
+  const totalPrice = Number(price) + Number(deliveryFee);
   return `Shipping to ${String(country)} will cost ${totalPrice} credits`;
 }
 
